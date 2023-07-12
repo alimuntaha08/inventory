@@ -22,7 +22,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href=""><b>Inventory Management System</b></a>
+    <a href=""><b></b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -50,6 +50,23 @@
           <button type="submit" class="btn btn-success btn-block btn-flat">Log In</button>
         </div>
         <!-- /.col -->
+		
+      </div>
+	  <hr>
+	  <div class="row">
+		<div class="col-xs-12"><p class="login-box-msg">Demo user, please use this information bellow</p></div>
+	  </div>
+	  <div class="row">
+		<div class="col-xs-6">
+			Super Admin<br>
+			User:admin@gmail.com<br>
+			Psw:Password@123
+		</div>
+		<div class="col-xs-6">
+			Supervisor<br>
+			User:andipratama@gmail.com<br>
+			Psw:andi1234
+		</div>
       </div>
     </form>
 
