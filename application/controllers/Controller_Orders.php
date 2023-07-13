@@ -76,7 +76,7 @@ class Controller_Orders extends Admin_Controller
 				$value['customer_phone'],
 				$date_time,
 				$count_total_item,
-				$this->company_currency().$value['net_amount'],
+				$this->company_currency().number_format($value['net_amount'],2,',','.'),
 				// $paid_status,
 				$buttons
 			);

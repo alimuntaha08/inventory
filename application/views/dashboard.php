@@ -71,12 +71,17 @@
             <!-- small box -->
             <div class="small-box bg-green">
               <div class="inner">
-                <h3><?php $query = $this->db->query('SELECT SUM( net_amount)as total FROM orders WHERE paid_status = 1')->row(); echo floatval($query->total);?></h3>
+               <h3>
+			   <?php 
+			   $query = $this->db->query('SELECT SUM( net_amount)as total FROM orders WHERE paid_status = 1')->row(); 
+			    $tot=floatval($query->total)/1000;
+				echo 'Rp'.number_format($tot,2,',','.');				
+			   ?></h3>
 
-                <h4><b>Total Sales</b></h4>
+                <h4><b>Total Sales (x000)</b></h4>
               </div>
               <div class="icon">
-                <i class="fa fa-dollar"></i>
+                <i class="fa fa-money"></i>
               </div>
               <a href="<?php echo base_url('Controller_Orders/') ?>" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
